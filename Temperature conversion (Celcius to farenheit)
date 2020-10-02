@@ -1,20 +1,13 @@
 import java.util.Scanner;
-
-class Cels{
-	
+class Convert{
 	public static void main(String args[])
-	{
-		
+	{		
 		Scanner userin = new Scanner(System.in);
-		System.out.println("Enter Temperature in Celsius: "); //enter temp
-		
-		float input =userin.nextFloat();
-		
-		float fahr=((9*input)/5)+32;
-		float kel = input+273.15f;
-		
-		System.out.println("Temperature in Celsius: "+input);
-		System.out.println("Temperature in Fahreinheit: "+fahr);
-		System.out.println("Temperature in Kelvin: "+kel);
+		System.out.println("Enter Temperature in Celsius: "); //enter temp in celcius
+		int input =userin.nextInt();	
+		int fahr=((9*input)/5)+32;
+		int kel = input+273.15f;
+		System.out.println("Temperature in Celsius: "+input +"\nTemperature in Fahreinheit: "+fahr+"\nTemperature in Kelvin: "+kel);
 	}
+	
 }
